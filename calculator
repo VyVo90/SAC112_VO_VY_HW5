@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class CalculatorConditionalStatement {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		int number1;
+		int number2;
+		int ans;
+		char sign;
+		String str;
+		
+		System.out.println("Enter number1 is ");
+		number1 = input.nextInt();
+		
+		System.out.println("Enter number2 is ");
+		number2 = input.nextInt();
+		
+		System.out.printf("Enter sign: ");
+		str  = input.next();
+		
+		
+		if ( str.equals("+"))
+		{ans = number1 + number2;
+		System.out.printf("Sum: %d\n ", "+" );}
+		else if  ( str.equals("-"))
+	    {ans = number1 - number2;
+	    System.out.printf("Subtraction: %d\n ","-");}
+	    else if( str.equals("*"))
+		{ans = number1 * number2;
+		System.out.printf("Multiplications: %d\n ","*");}
+		else if( str.equals ("/"))
+		{ans = number1 / number2;
+		System.out.printf("Division: %d ","/");}
+		else
+		System.out.print("Invalid option");
+			
+	}
+
+}
